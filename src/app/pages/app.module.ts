@@ -5,6 +5,7 @@ import {ClienteComponent} from './cliente/cliente.component';
 import {CategoriaComponent} from './categoria/categoria.component';
 import {LoginComponent} from './login/login.component';
 import {ProdutoComponent} from './produto/produto.component';
+import {AppRoutingModule} from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -12,10 +13,11 @@ import {ProdutoComponent} from './produto/produto.component';
     ClienteComponent,
     CategoriaComponent,
     LoginComponent,
-    ProdutoComponent
+    ProdutoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [
