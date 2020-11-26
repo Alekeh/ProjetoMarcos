@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  logar(event: any): void {
+  logar(event): void {
     this.route.navigate(['/cliente']);
   }
 }
