@@ -13,4 +13,4 @@ const APP_ROUTES: Routes = [
   {path: 'produto', component: ProdutoComponent}
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
+export const routing: ModuleWithProviders<any> = RouterModule.forRoot(APP_ROUTES);
