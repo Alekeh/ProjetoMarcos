@@ -1,1 +1,9 @@
-<h2>Produto</h2>
+<div>
+  <label>Nome</label>
+  <input aria-label="Usuario" type="text" placeholder="Nome" id="nome" name="nome" [(ngModel)]="nome"/>
+</div>
+<div>
+  <label>Preço</label>
+  <input aria-label="Senha" type="number" placeholder="preço" id="preco" name="preco" [(ngModel)]="preco"/>
+</div>
+<input type="submit" class="btnSubmit" (click)="CadastrarProduto()" value="Login"/>

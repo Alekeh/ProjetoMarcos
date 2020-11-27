@@ -7,8 +7,13 @@ import {Router} from '@angular/router';
   styleUrls: ['./produto.component.scss']
 })
 export class ProdutoComponent {
+  preco: any;
+  nome: any;
 
   constructor(private route: Router) {
   }
 
+  CadastrarProduto(): void {
+
+  }
 }
