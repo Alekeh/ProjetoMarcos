@@ -14,6 +14,7 @@ export class LoginComponent {
   }
 
   login(): void {
+    // se quiser fazer validação de email é aqui
     if (this.usuario === 'bruno' && this.senha === '1') {
       console.log(this.usuario + '-' + this.senha);
       this.route.navigate(['/cliente']);
