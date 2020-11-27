@@ -1,0 +1,9 @@
+<div>
+  <label>Usuario</label>
+  <input aria-label="Usuario" type="text" placeholder="Usuario" id="usuario" name="usuario" [(ngModel)]="usuario"/>
+</div>
+<div>
+  <label>Senha</label>
+  <input aria-label="Senha" type="password" placeholder="Senha" id="senha" name="senha" [(ngModel)]="senha"/>
+</div>
+<input type="submit" class="btnSubmit" (click)="login()" value="Cadastrar"/>

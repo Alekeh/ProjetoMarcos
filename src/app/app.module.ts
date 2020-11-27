@@ -1,37 +1,25 @@
-import { routing } from './app.routing';
-import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-// import { HttpModule } from '@angular/http';
+import {NgModule} from '@angular/core';
 
-import {AppComponent} from './pages/app.page.init/app.component';
-import {ClienteComponent} from './pages/cliente/cliente.component';
-import {CategoriaComponent} from './pages/categoria/categoria.component';
-import {LoginComponent} from './pages/login/login.component';
-import {ProdutoComponent} from './pages/produto/produto.component';
+import {AppComponent} from './app.component';
+import {LoginComponent} from './login/login.component';
+import {AppRoutingModule} from './app.routing.module';
+import {ClienteComponent} from './cliente/cliente.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClienteComponent,
-    CategoriaComponent,
     LoginComponent,
-    ProdutoComponent,
+    ClienteComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    routing
-    // HttpModule
   ],
   providers: [],
-  bootstrap: [
-    AppComponent,
-    ClienteComponent,
-    CategoriaComponent,
-    LoginComponent,
-    ProdutoComponent
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
