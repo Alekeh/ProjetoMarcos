@@ -32,4 +32,7 @@ export class CategoriaListComponent implements OnInit {
     this.listaCategoria.push(categoria1, categoria2, categoria3);
   }
 
+  editCategoria(event: any): void {
+    this.route.navigate(['/categoriaEdit']);
+  }
 }

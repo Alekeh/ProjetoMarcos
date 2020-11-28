@@ -11,4 +11,8 @@ export class CategoriaEditComponent {
   constructor(private route: Router) {
   }
 
+  editarCategoria(): void {
+  // Vai no banco edita e assim que finalizar volta para a tela de list
+    this.route.navigate(['/categoriaList']);
+  }
 }

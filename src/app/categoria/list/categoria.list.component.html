@@ -1,5 +1,5 @@
 <h2>Lista de Categorias </h2>
-<div *ngFor="let categoria of listaCategoria">
+<div *ngFor="let categoria of listaCategoria" (click)="editCategoria($event)">
   <table border='2'>
     <tr>
       <th>{{categoria.id}}</th>
