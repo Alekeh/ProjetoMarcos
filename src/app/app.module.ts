@@ -4,18 +4,18 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {LoginComponent} from './login/login.component';
 import {AppRoutingModule} from './app.routing.module';
-import {ClienteComponent} from './cliente/cliente.component';
 import {FormsModule} from '@angular/forms';
 import {CategoriaComponent} from './categoria/categoria.component';
-import {ProdutoComponent} from './produto/produto.component';
+import {CategoriaListComponent} from './categoria/list/categoria.list.component';
+import {CategoriaEditComponent} from './categoria/edit/categoria.edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ClienteComponent,
     CategoriaComponent,
-    ProdutoComponent
+    CategoriaListComponent,
+    CategoriaEditComponent
   ],
   imports: [
     BrowserModule,
