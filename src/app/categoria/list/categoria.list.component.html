@@ -1,3 +1,11 @@
-<h2>Categoria List</h2>
+<h2>Lista de Categorias </h2>
+<div *ngFor="let categoria of listaCategoria">
+  <table border='2'>
+    <tr>
+      <th>{{categoria.id}}</th>
+      <td>{{categoria.nome}}</td>
+    </tr>
+  </table>
+</div>
 
-<!--vai vim um for para exibir uma lista de Categorias -->
+

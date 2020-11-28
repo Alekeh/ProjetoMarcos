@@ -14,7 +14,22 @@ export class CategoriaListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.adicionaCategorias();
+
     // Faz um service que vai bater no backend /categorias que o retorno vai atribuir ao data listaCategoria
+  }
+
+  adicionaCategorias(): void {
+    const categoria1: Categoria = new Categoria();
+    categoria1.id = 1;
+    categoria1.nome = 'categoria1';
+    const categoria2: Categoria = new Categoria();
+    categoria2.id = 2;
+    categoria2.nome = 'categoria2';
+    const categoria3: Categoria = new Categoria();
+    categoria3.id = 3;
+    categoria3.nome = 'categoria3';
+    this.listaCategoria.push(categoria1, categoria2, categoria3);
   }
 
 }
